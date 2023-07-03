@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		714DBE022A52FB26000F8C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE012A52FB26000F8C89 /* AppDelegate.swift */; };
 		714DBE042A52FB26000F8C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE032A52FB26000F8C89 /* SceneDelegate.swift */; };
-		714DBE062A52FB26000F8C89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE052A52FB26000F8C89 /* ViewController.swift */; };
 		714DBE092A52FB26000F8C89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714DBE072A52FB26000F8C89 /* Main.storyboard */; };
 		714DBE0B2A52FB27000F8C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714DBE0A2A52FB27000F8C89 /* Assets.xcassets */; };
 		714DBE0E2A52FB27000F8C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714DBE0C2A52FB27000F8C89 /* LaunchScreen.storyboard */; };
+		714DBE1C2A53031B000F8C89 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE1B2A53031B000F8C89 /* OnboardingViewController.swift */; };
+		714DBE1F2A53064C000F8C89 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE1E2A53064C000F8C89 /* UIView+Extension.swift */; };
+		714DBE212A530789000F8C89 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE202A530789000F8C89 /* OnboardingSlide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		714DBDFE2A52FB26000F8C89 /* YummieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		714DBE012A52FB26000F8C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		714DBE032A52FB26000F8C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		714DBE052A52FB26000F8C89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		714DBE082A52FB26000F8C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		714DBE0A2A52FB27000F8C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714DBE0D2A52FB27000F8C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		714DBE0F2A52FB27000F8C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714DBE1B2A53031B000F8C89 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		714DBE1E2A53064C000F8C89 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		714DBE202A530789000F8C89 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		714DBE002A52FB26000F8C89 /* YummieApp */ = {
 			isa = PBXGroup;
 			children = (
+				714DBE1D2A530630000F8C89 /* Extension */,
+				714DBE162A53020D000F8C89 /* Models */,
+				714DBE152A530204000F8C89 /* Views */,
+				714DBE172A530217000F8C89 /* CustomViews */,
 				714DBE012A52FB26000F8C89 /* AppDelegate.swift */,
 				714DBE032A52FB26000F8C89 /* SceneDelegate.swift */,
-				714DBE052A52FB26000F8C89 /* ViewController.swift */,
 				714DBE072A52FB26000F8C89 /* Main.storyboard */,
 				714DBE0A2A52FB27000F8C89 /* Assets.xcassets */,
 				714DBE0C2A52FB27000F8C89 /* LaunchScreen.storyboard */,
 				714DBE0F2A52FB27000F8C89 /* Info.plist */,
 			);
 			path = YummieApp;
+			sourceTree = "<group>";
+		};
+		714DBE152A530204000F8C89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				714DBE182A530260000F8C89 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		714DBE162A53020D000F8C89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				714DBE202A530789000F8C89 /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		714DBE172A530217000F8C89 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		714DBE182A530260000F8C89 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				714DBE1B2A53031B000F8C89 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		714DBE1D2A530630000F8C89 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				714DBE1E2A53064C000F8C89 /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				714DBE062A52FB26000F8C89 /* ViewController.swift in Sources */,
+				714DBE212A530789000F8C89 /* OnboardingSlide.swift in Sources */,
 				714DBE022A52FB26000F8C89 /* AppDelegate.swift in Sources */,
 				714DBE042A52FB26000F8C89 /* SceneDelegate.swift in Sources */,
+				714DBE1F2A53064C000F8C89 /* UIView+Extension.swift in Sources */,
+				714DBE1C2A53031B000F8C89 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
