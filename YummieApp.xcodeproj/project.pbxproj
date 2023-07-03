@@ -15,6 +15,7 @@
 		714DBE1C2A53031B000F8C89 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE1B2A53031B000F8C89 /* OnboardingViewController.swift */; };
 		714DBE1F2A53064C000F8C89 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE1E2A53064C000F8C89 /* UIView+Extension.swift */; };
 		714DBE212A530789000F8C89 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE202A530789000F8C89 /* OnboardingSlide.swift */; };
+		716272642A53384F00A93B1D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716272632A53384F00A93B1D /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		714DBE1B2A53031B000F8C89 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		714DBE1E2A53064C000F8C89 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		714DBE202A530789000F8C89 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		716272632A53384F00A93B1D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				714DBE1B2A53031B000F8C89 /* OnboardingViewController.swift */,
+				716272632A53384F00A93B1D /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				714DBE042A52FB26000F8C89 /* SceneDelegate.swift in Sources */,
 				714DBE1F2A53064C000F8C89 /* UIView+Extension.swift in Sources */,
 				714DBE1C2A53031B000F8C89 /* OnboardingViewController.swift in Sources */,
+				716272642A53384F00A93B1D /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
