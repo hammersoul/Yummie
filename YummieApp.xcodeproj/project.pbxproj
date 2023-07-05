@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1878F3DA3D6B48860CA953DF /* Pods_YummieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE95869C79D408F2FFBFE64 /* Pods_YummieApp.framework */; };
+		7141601C2A553C3100A2AA6C /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141601B2A553C3100A2AA6C /* Dish.swift */; };
 		7141FA112A544DEB00EB13F7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141FA102A544DEB00EB13F7 /* CardView.swift */; };
+		7141FA172A5452DE00EB13F7 /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141FA152A5452DE00EB13F7 /* DishPortraitCollectionViewCell.swift */; };
+		7141FA182A5452DE00EB13F7 /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7141FA162A5452DE00EB13F7 /* DishPortraitCollectionViewCell.xib */; };
 		714DBE022A52FB26000F8C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE012A52FB26000F8C89 /* AppDelegate.swift */; };
 		714DBE042A52FB26000F8C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DBE032A52FB26000F8C89 /* SceneDelegate.swift */; };
 		714DBE092A52FB26000F8C89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714DBE072A52FB26000F8C89 /* Main.storyboard */; };
@@ -27,7 +30,10 @@
 
 /* Begin PBXFileReference section */
 		3FE95869C79D408F2FFBFE64 /* Pods_YummieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YummieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7141601B2A553C3100A2AA6C /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		7141FA102A544DEB00EB13F7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7141FA152A5452DE00EB13F7 /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		7141FA162A5452DE00EB13F7 /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
 		714DBDFE2A52FB26000F8C89 /* YummieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		714DBE012A52FB26000F8C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		714DBE032A52FB26000F8C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,15 @@
 				7141FA102A544DEB00EB13F7 /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		7141FA122A54528D00EB13F7 /* DishPortraitCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7141FA152A5452DE00EB13F7 /* DishPortraitCollectionViewCell.swift */,
+				7141FA162A5452DE00EB13F7 /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishPortraitCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		714DBDF52A52FB26000F8C89 = {
@@ -117,6 +132,7 @@
 			children = (
 				714DBE202A530789000F8C89 /* OnboardingSlide.swift */,
 				718FCF492A541F4100B0BB64 /* DishCategory.swift */,
+				7141601B2A553C3100A2AA6C /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +175,7 @@
 		718FCF432A541C8400B0BB64 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				7141FA122A54528D00EB13F7 /* DishPortraitCollectionViewCell */,
 				718FCF442A541C9B00B0BB64 /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCell;
@@ -252,6 +269,7 @@
 			files = (
 				718FCF482A541D1900B0BB64 /* CategoryCollectionViewCell.xib in Resources */,
 				714DBE0E2A52FB27000F8C89 /* LaunchScreen.storyboard in Resources */,
+				7141FA182A5452DE00EB13F7 /* DishPortraitCollectionViewCell.xib in Resources */,
 				714DBE0B2A52FB27000F8C89 /* Assets.xcassets in Resources */,
 				714DBE092A52FB26000F8C89 /* Main.storyboard in Resources */,
 			);
@@ -317,6 +335,8 @@
 				718FCF4C2A54220500B0BB64 /* String+Extension.swift in Sources */,
 				7141FA112A544DEB00EB13F7 /* CardView.swift in Sources */,
 				716272642A53384F00A93B1D /* OnboardingCollectionViewCell.swift in Sources */,
+				7141601C2A553C3100A2AA6C /* Dish.swift in Sources */,
+				7141FA172A5452DE00EB13F7 /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

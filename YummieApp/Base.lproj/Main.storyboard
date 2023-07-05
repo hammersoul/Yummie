@@ -147,11 +147,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhD-sJ-Pbs">
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kzh-ca-Ash">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kzh-ca-Ash">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="674"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HI-jL-RBF">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="170"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fez-qh-nRC">
                                                         <rect key="frame" x="16" y="16" width="361" height="24"/>
@@ -163,10 +163,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-G3-bX2">
-                                                        <rect key="frame" x="0.0" y="48" width="393" height="122"/>
+                                                        <rect key="frame" x="0.0" y="48" width="393" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="122" id="GD2-7W-Gjy"/>
+                                                            <constraint firstAttribute="height" constant="70" id="GD2-7W-Gjy"/>
                                                         </constraints>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="by0-LV-9G8">
                                                             <size key="itemSize" width="128" height="122"/>
@@ -176,7 +176,7 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KO9-q5-bc9">
-                                                                <rect key="frame" x="20" y="0.0" width="128" height="122"/>
+                                                                <rect key="frame" x="20" y="-26" width="128" height="122"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kEJ-Zr-GHT">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="122"/>
@@ -202,7 +202,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu9-Za-wqU">
-                                                <rect key="frame" x="0.0" y="170" width="393" height="348"/>
+                                                <rect key="frame" x="0.0" y="138" width="393" height="348"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Dishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXG-7d-NUQ">
                                                         <rect key="frame" x="16" y="16" width="361" height="24"/>
@@ -213,24 +213,24 @@
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OOM-rf-k6r">
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OOM-rf-k6r">
                                                         <rect key="frame" x="0.0" y="48" width="393" height="300"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="300" id="j5Z-hs-4TA"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fm3-3c-Snu">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fm3-3c-Snu">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="40" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u4s-fn-JQ7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                                                <rect key="frame" x="20" y="0.0" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p9C-KP-H5L">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                 </collectionViewCellContentView>
                                                             </collectionViewCell>
@@ -253,7 +253,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X82-fM-DV9">
-                                                <rect key="frame" x="0.0" y="518" width="393" height="168"/>
+                                                <rect key="frame" x="0.0" y="506" width="393" height="168"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chefs Specials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Der-De-Dhy">
                                                         <rect key="frame" x="16" y="16" width="361" height="24"/>
@@ -314,7 +314,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OjR-UR-leX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OhD-sJ-Pbs" firstAttribute="leading" secondItem="OjR-UR-leX" secondAttribute="leading" id="8h7-83-HF6"/>
                             <constraint firstAttribute="bottom" secondItem="OhD-sJ-Pbs" secondAttribute="bottom" id="RkI-j4-XcN"/>
@@ -329,6 +329,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="eXV-G3-bX2" id="0ZB-Ru-YyZ"/>
+                        <outlet property="popularCollectionView" destination="OOM-rf-k6r" id="VQb-LN-NSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6Z-Fi-Ky0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
