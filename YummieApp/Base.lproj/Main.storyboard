@@ -437,6 +437,40 @@
             </objects>
             <point key="canvasLocation" x="2900" y="3.5211267605633805"/>
         </scene>
+        <!--List Dishes View Controller-->
+        <scene sceneID="Gdx-ra-vsk">
+            <objects>
+                <viewController storyboardIdentifier="ListDishesViewController" id="cbz-Up-Bfb" customClass="ListDishesViewController" customModule="YummieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L5n-in-juJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5fC-RV-F70">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cbz-Up-Bfb" id="fXI-aY-kkf"/>
+                                    <outlet property="delegate" destination="cbz-Up-Bfb" id="Lq0-q8-r4l"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v1J-2b-dbb"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v1J-2b-dbb" firstAttribute="bottom" secondItem="5fC-RV-F70" secondAttribute="bottom" id="9q3-VR-nQM"/>
+                            <constraint firstItem="5fC-RV-F70" firstAttribute="leading" secondItem="v1J-2b-dbb" secondAttribute="leading" id="Ke4-Um-743"/>
+                            <constraint firstItem="v1J-2b-dbb" firstAttribute="trailing" secondItem="5fC-RV-F70" secondAttribute="trailing" id="Kkk-7L-nbX"/>
+                            <constraint firstItem="5fC-RV-F70" firstAttribute="top" secondItem="v1J-2b-dbb" secondAttribute="top" id="KsP-Vn-AgW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="5fC-RV-F70" id="drN-ao-X9w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TX-Na-sR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3873" y="4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ssx-mS-taX">
             <objects>
