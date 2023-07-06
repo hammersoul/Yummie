@@ -33,6 +33,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let service = NetworkService()
+        let request = service.createRequest(route: .temp, method: .get, parameters: ["firstName": "Emmanuel", "lastName": "Okwara"])
+        print("The URL is \(request?.url)")
+        print("The Body is \(request?.httpBody)")
+        
         specialsCollectionView.dataSource = self
         specialsCollectionView.delegate = self
         

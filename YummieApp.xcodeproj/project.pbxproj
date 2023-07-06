@@ -14,6 +14,9 @@
 		711F7CB32A5695B200F9D19B /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7CB22A5695B200F9D19B /* ListDishesViewController.swift */; };
 		711F7CB62A569AFC00F9D19B /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7CB52A569AFC00F9D19B /* ListOrdersViewController.swift */; };
 		711F7CB82A569CA600F9D19B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7CB72A569CA600F9D19B /* Order.swift */; };
+		711F7CBB2A56A49200F9D19B /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7CBA2A56A49200F9D19B /* NetworkServices.swift */; };
+		711F7CBD2A56A58300F9D19B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7CBC2A56A58300F9D19B /* Route.swift */; };
+		711F7CBF2A56A6A300F9D19B /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711F7CBE2A56A6A300F9D19B /* Method.swift */; };
 		7141601C2A553C3100A2AA6C /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141601B2A553C3100A2AA6C /* Dish.swift */; };
 		714160202A554CD800A2AA6C /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141601E2A554CD800A2AA6C /* DishLandscapeCollectionViewCell.swift */; };
 		714160212A554CD800A2AA6C /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7141601F2A554CD800A2AA6C /* DishLandscapeCollectionViewCell.xib */; };
@@ -39,12 +42,15 @@
 
 /* Begin PBXFileReference section */
 		3FE95869C79D408F2FFBFE64 /* Pods_YummieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YummieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		711F7CA92A568B0700F9D19B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "../../../../../Downloads/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		711F7CA92A568B0700F9D19B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		711F7CAD2A56920A00F9D19B /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		711F7CAE2A56920A00F9D19B /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		711F7CB22A5695B200F9D19B /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		711F7CB52A569AFC00F9D19B /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		711F7CB72A569CA600F9D19B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		711F7CBA2A56A49200F9D19B /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		711F7CBC2A56A58300F9D19B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		711F7CBE2A56A6A300F9D19B /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		7141601B2A553C3100A2AA6C /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		7141601E2A554CD800A2AA6C /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		7141601F2A554CD800A2AA6C /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -117,6 +123,16 @@
 			path = ListOrders;
 			sourceTree = "<group>";
 		};
+		711F7CB92A56A47E00F9D19B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				711F7CBA2A56A49200F9D19B /* NetworkServices.swift */,
+				711F7CBC2A56A58300F9D19B /* Route.swift */,
+				711F7CBE2A56A6A300F9D19B /* Method.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		7141601D2A554CB000A2AA6C /* DishLandscapeCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +188,7 @@
 		714DBE002A52FB26000F8C89 /* YummieApp */ = {
 			isa = PBXGroup;
 			children = (
+				711F7CB92A56A47E00F9D19B /* Networking */,
 				714DBE1D2A530630000F8C89 /* Extension */,
 				714DBE162A53020D000F8C89 /* Models */,
 				714DBE152A530204000F8C89 /* Views */,
@@ -409,16 +426,19 @@
 				714DBE212A530789000F8C89 /* OnboardingSlide.swift in Sources */,
 				714DBE022A52FB26000F8C89 /* AppDelegate.swift in Sources */,
 				714DBE042A52FB26000F8C89 /* SceneDelegate.swift in Sources */,
+				711F7CBF2A56A6A300F9D19B /* Method.swift in Sources */,
 				714DBE1F2A53064C000F8C89 /* UIView+Extension.swift in Sources */,
 				714DBE1C2A53031B000F8C89 /* OnboardingViewController.swift in Sources */,
 				714160242A555D7200A2AA6C /* DishDetailViewController.swift in Sources */,
 				718FCF422A54176D00B0BB64 /* HomeViewController.swift in Sources */,
 				718FCF4A2A541F4100B0BB64 /* DishCategory.swift in Sources */,
+				711F7CBD2A56A58300F9D19B /* Route.swift in Sources */,
 				714160202A554CD800A2AA6C /* DishLandscapeCollectionViewCell.swift in Sources */,
 				718FCF4C2A54220500B0BB64 /* String+Extension.swift in Sources */,
 				7141FA112A544DEB00EB13F7 /* CardView.swift in Sources */,
 				711F7CB32A5695B200F9D19B /* ListDishesViewController.swift in Sources */,
 				716272642A53384F00A93B1D /* OnboardingCollectionViewCell.swift in Sources */,
+				711F7CBB2A56A49200F9D19B /* NetworkServices.swift in Sources */,
 				7141601C2A553C3100A2AA6C /* Dish.swift in Sources */,
 				7141FA172A5452DE00EB13F7 /* DishPortraitCollectionViewCell.swift in Sources */,
 			);
