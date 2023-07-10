@@ -10,8 +10,8 @@ struct NetworkService {
     
     private init() {}
     
-    func myFirstRequest() {
-        request(route: .temp, method: .get, completion: { _ in })
+    func myFirstRequest(completion: @escaping(Result<String, Error>) -> Void) {
+        request(route: .temp, method: .get, completion: completion)
     }
     
     private func request<T: Decodable>(route: Route,
@@ -35,10 +35,40 @@ struct NetworkService {
                 }
                 
                 DispatchQueue.main.async {
-                   
+                    self.handleResponse(result: result, completion: completion)
                 }
             }.resume()
         }
+    
+    private func handleResponse<T: Decodable>(result: Result<Data, Error>?, completion: (Result<T, Error>) -> Void) {
+        guard let result = result else {
+            completion(.failure(AppError.unknownError))
+            return
+        }
+        
+        switch result {
+        case .success(let data):
+            let decoder = JSONDecoder()
+            guard let response = try?
+                    decoder.decode(ApiResponse<T>.self, from: data) else {
+                completion(.failure(AppError.errorDecoding))
+                return
+            }
+            
+            if let error = response.error {
+                completion(.failure(AppError.serverError(error)))
+                return
+            }
+            
+            if let decodedData = response.data {
+                completion(.success(decodedData))
+            } else {
+                completion(.failure(AppError.unknownError))
+            }
+        case .failure(let error):
+            completion(.failure(error))
+        }
+    }
     
     private func createRequest(route: Route, method: Method, parameters: [String: Any]? = nil) -> URLRequest? {
         let urlString = Route.baseUrl + route.description
