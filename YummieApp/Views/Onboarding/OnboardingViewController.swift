@@ -33,7 +33,7 @@ class OnboardingViewController: UIViewController {
             OnboardingSlide(title: "Instant World-Wide Delivery", description: "Your orders will be delivered instantly irrespective of your location around the world.", image: #imageLiteral(resourceName: "slide3"))
         ]
         
-        pageControl.currentPage = slides.count
+        pageControl.currentPage = 0
     }
     
     @IBAction func nextBtnClicked(_ sender: UIButton) {
