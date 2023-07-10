@@ -14,6 +14,12 @@ struct NetworkService {
         request(route: .fetchAllCategories, method: .get, completion: completion)
     }
     
+    func placeOrder(dishId: String, name: String, completion: @escaping(Result<Order, Error>) -> Void) {
+        let params = ["name": name]
+        
+        request(route: .placeOrder(dishId), method: .post, parameters: params, completion: completion)
+    }
+    
     private func request<T: Decodable>(route: Route,
                                          method: Method,
                                          parameters: [String: Any]? = nil,
@@ -22,7 +28,7 @@ struct NetworkService {
                 completion(.failure(AppError.unknownError))
                 return
             }
-            
+             
             URLSession.shared.dataTask(with: request) { data, response, error in
                 var result: Result<Data, Error>?
                 if let data = data {
